@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "icmp4em"
+  s.name = "krakatoa-icmp4em"
   s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
     "VERSION",
     "examples/simple_example.rb",
     "examples/stateful_example.rb",
-    "icmp4em.gemspec",
     "lib/icmp4em.rb",
     "lib/icmp4em/common.rb",
     "lib/icmp4em/handler.rb",

@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "icmp4em"
+  gem.name = "krakatoa-icmp4em"
   gem.homepage = "http://github.com/krakatoa/icmp4em"
   gem.license = "MIT"
   gem.summary = %Q{Asynchronous implementation of ICMP ping over EventMachine}
