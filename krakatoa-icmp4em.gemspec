@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "examples/simple_example.rb",
     "examples/stateful_example.rb",
+    "krakatoa-icmp4em.gemspec",
     "lib/icmp4em.rb",
     "lib/icmp4em/common.rb",
     "lib/icmp4em/handler.rb",
