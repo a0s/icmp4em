@@ -36,7 +36,6 @@ module ICMP4EM
     # * :recoveries_required
     # Indicates how many consequtive successes are required to switch to the 'recovered' state and execute the on_recovery callback. Applies only when :stateful => true
     def initialize(host, options = {})
-      raise 'requires root privileges' if Process.euid > 0
       @host = host
       @ipv4_sockaddr = Socket.pack_sockaddr_in(0, @host)
       @interval   =   options[:interval] || 1
@@ -136,7 +135,7 @@ module ICMP4EM
     def init_handler
       self.class.recvsocket = Socket.new(
       Socket::PF_INET,
-      Socket::SOCK_RAW,
+      Socket::SOCK_DGRAM,
       Socket::IPPROTO_ICMP
       )
       if @bind_host
