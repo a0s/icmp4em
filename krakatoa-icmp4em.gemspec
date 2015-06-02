@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
-      s.add_runtime_dependency(%q<eventmachine>, [">= 1.0.0.beta.4"])
+      # s.add_runtime_dependency(%q<eventmachine>, [">= 1.0.0.beta.4"])
     else
       s.add_dependency(%q<eventmachine>, [">= 1.0.0.beta.4"])
       s.add_dependency(%q<shoulda>, [">= 0"])
