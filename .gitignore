@@ -1,3 +1,4 @@
 .ruby-*
 /.idea
+/Gemfile.lock
 pkg
