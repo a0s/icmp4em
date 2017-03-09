@@ -79,6 +79,12 @@ module ICMP4EM
       @ptimer = EM::PeriodicTimer.new(@interval) { self.ping }
     end
 
+    # Make single ping request
+    def schedule_one
+      raise "EM not running" unless EM.reactor_running?
+      self.ping
+    end
+
     private
 
     # Expire a sequence number from the waiting queue.
