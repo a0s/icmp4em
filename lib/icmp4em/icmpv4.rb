@@ -141,7 +141,7 @@ module ICMP4EM
     def init_handler
       self.class.recvsocket = Socket.new(
       Socket::PF_INET,
-      Socket::SOCK_DGRAM,
+      Socket::SOCK_RAW,
       Socket::IPPROTO_ICMP
       )
       if @bind_host
